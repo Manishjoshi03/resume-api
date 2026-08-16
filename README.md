@@ -69,7 +69,7 @@ Currently implemented:
 
 Remaining APIs will be added as development continues.
 
-[View Postman API Documentation](https://documenter.getpostman.com/view/56589029/2sBY4SMJa5)
+[View Postman API Documentation](https://documenter.getpostman.com/view/56589029/2sBY4SM5)
 
 ## Current Progress
 
