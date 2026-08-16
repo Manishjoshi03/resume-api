@@ -1,20 +1,8 @@
 const express = require("express");
-
 const router = express.Router();
+const aiController = require("../controllers/aiController");
+const auth = require("../middleware/auth");
 
-const {
-    generateBullets,
-    generateSummary,
-    rewriteText,
-    promptText
-} = require("../controllers/aiController");
-
-router.post("/bullets", generateBullets);
-
-router.post("/summary", generateSummary);
-
-router.post("/rewrite", rewriteText);
-
-router.post("/prompt", promptText);
+router.post("/improve", auth, aiController.improveText);
 
 module.exports = router;
